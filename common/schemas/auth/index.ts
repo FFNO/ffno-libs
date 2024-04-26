@@ -1,2 +1,2 @@
-export * from "./request.schema";
-export * from "./response.schema";
+export * from './request.dto';
+export * from './response.dto';

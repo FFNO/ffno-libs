@@ -1,5 +1,5 @@
-import { z } from "zod";
-import { Gender } from "../../enums";
+import { z } from 'zod';
+import { Gender, MemberRole } from '../../enums';
 
 export const signInSchema = z.object({
   email: z.string().email(),
@@ -12,6 +12,7 @@ export const signUpSchema = signInSchema.extend({
   address: z.string().optional(),
   dateOfBirth: z.coerce.date().optional(),
   identityNumber: z.string().length(12).optional(),
+  role: z.nativeEnum(MemberRole).refine((arg) => arg !== MemberRole.ADMIN),
 });
 
 export type SignInDto = z.infer<typeof signInSchema>;
