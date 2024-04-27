@@ -1,1 +1,1 @@
-export * from "./command-pattern";
+export * from './command-pattern';
