@@ -12,3 +12,8 @@ export interface IMemberResDto {
   role: MemberRole;
   unit: string;
 }
+
+export interface ICurrentMemberResDto {
+  identityNumber: string;
+  identityImgUrls: string;
+}
