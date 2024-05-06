@@ -4,6 +4,7 @@ export const NOTIFICATION_PATTERNS = {
 };
 
 export const CHAT_PATTERNS = {
+  GET_LIST_MESSAGES: 'chat.get-list-message',
   SEND_MESSAGE: 'chat.send_message',
   RECEIVE_MESSAGE: 'chat.receive_message',
 };
