@@ -3,7 +3,12 @@ export interface ISendMessageDto {
   channelId: string;
 }
 
-export interface IGetMessageListDto {
+export interface IGetListMessageDto {
   memberId: string;
   channelId: string;
+}
+
+export interface IGetMessageDto {
+  id: string;
+  memberId: string;
 }
