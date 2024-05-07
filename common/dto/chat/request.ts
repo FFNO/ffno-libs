@@ -1,9 +1,9 @@
 export interface ISendMessageDto {
   content: string;
-  receiverId: string;
+  channelId: string;
 }
 
 export interface IGetMessageListDto {
-  senderId: string;
-  receiverId: string;
+  memberId: string;
+  channelId: string;
 }
