@@ -6,3 +6,8 @@ export interface IMessageResDto {
   updatedAt: Date;
   createdAt: Date;
 }
+
+export interface IGetListMessageResDto {
+  channelId: string;
+  messages: IMessageResDto[];
+}
