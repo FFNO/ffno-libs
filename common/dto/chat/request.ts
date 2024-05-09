@@ -7,6 +7,7 @@ export interface IGetListMessageDto {
   memberId: string;
   channelId: string;
   channelName?: string;
+  channelImgUrl?: string;
 }
 
 export interface IGetMessageDto {
@@ -21,6 +22,7 @@ export interface IGetMessageDto {
 export interface IChannelDto {
   id: string;
   name: string;
+  imgUrl: string;
   lastMessageId: string;
   updatedAt: Date;
   createdAt: Date;
