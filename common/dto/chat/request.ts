@@ -6,6 +6,7 @@ export interface ISendMessageDto {
 export interface IGetListMessageDto {
   memberId: string;
   channelId: string;
+  channelName?: string;
 }
 
 export interface IGetMessageDto {
