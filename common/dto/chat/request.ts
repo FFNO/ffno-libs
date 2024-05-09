@@ -18,7 +18,7 @@ export interface IGetMessageDto {
   createdAt: Date;
 }
 
-export interface IGetListChannel {
+export interface IChannelDto {
   id: string;
   name: string;
   lastMessageId: string;
