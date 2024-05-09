@@ -11,5 +11,18 @@ export interface IGetListMessageDto {
 
 export interface IGetMessageDto {
   id: string;
-  memberId: string;
+  content: string;
+  senderId: string;
+  channelId: string;
+  updatedAt: Date;
+  createdAt: Date;
+}
+
+export interface IGetListChannel {
+  id: string;
+  name: string;
+  lastMessageId: string;
+  updatedAt: Date;
+  createdAt: Date;
+  lastMessage: IGetMessageDto;
 }
