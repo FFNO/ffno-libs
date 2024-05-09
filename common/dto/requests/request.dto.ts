@@ -15,7 +15,7 @@ export interface ICreateRequestDto {
   unitId: string;
 }
 
-export class IUpdateRequestDto {
+export interface IUpdateRequestDto {
   id: string;
   status: RequestStatus;
 }

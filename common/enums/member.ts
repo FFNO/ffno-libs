@@ -21,3 +21,8 @@ export const memberRoleRecord: Record<MemberRole, string> = {
   [MemberRole.TENANT]: 'Tenant',
   [MemberRole.SERVICE_WORKER]: 'Service worker',
 };
+
+export const genderRecord: Record<Gender, string> = {
+  [Gender.MALE]: 'Male',
+  [Gender.FEMALE]: 'Female',
+};
