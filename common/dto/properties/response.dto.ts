@@ -1,3 +1,4 @@
+import { PropertyType } from '../../enums';
 import { Nullable } from '../../types';
 import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
@@ -5,7 +6,7 @@ import { IUnitResDto } from '../units';
 export interface IPropertyResDto {
   id: string;
   name: string;
-  type: number;
+  type: PropertyType;
   address: string;
   ward: string;
   district: string;
