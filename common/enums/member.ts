@@ -1,3 +1,5 @@
+import { getOptionListFromRecord } from '../../helpers';
+
 export enum MemberRole {
   ADMIN,
   LANDLORD,
@@ -26,3 +28,7 @@ export const genderRecord: Record<Gender, string> = {
   [Gender.MALE]: 'Male',
   [Gender.FEMALE]: 'Female',
 };
+
+export const genders = getOptionListFromRecord(genderRecord);
+
+export const memberRoles = getOptionListFromRecord(memberRoleRecord);

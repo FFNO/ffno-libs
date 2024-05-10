@@ -1,3 +1,5 @@
+import { getOptionListFromRecord } from '../../helpers';
+
 export enum UnitStatus {
   GOOD,
   MAINTAINING,
@@ -9,3 +11,5 @@ export const unitStatusRecord: Record<UnitStatus, string> = {
   [UnitStatus.MAINTAINING]: 'Maintaining',
   [UnitStatus.BAD]: 'Bad',
 };
+
+export const unitStatuses = getOptionListFromRecord(unitStatusRecord);

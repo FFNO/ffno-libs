@@ -1,3 +1,5 @@
+import { getOptionListFromRecord } from '../../helpers';
+
 export enum RequestCategory {
   UNIT_LEASE,
 }
@@ -17,3 +19,5 @@ export const requestStatusRecord: Record<RequestStatus, string> = {
   [RequestStatus.ACCEPTED]: 'Approved',
   [RequestStatus.REJECTED]: 'Rejected',
 };
+
+export const requestCategories = getOptionListFromRecord(requestCategoryRecord);
