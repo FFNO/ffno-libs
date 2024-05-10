@@ -1,13 +1,13 @@
 import { getOptionListFromRecord } from '../../helpers';
 
 export enum RequestCategory {
-  UNIT_LEASE,
+  UNIT_LEASE = 'UNIT_LEASE',
 }
 
 export enum RequestStatus {
-  PENDING,
-  ACCEPTED,
-  REJECTED,
+  PENDING = 'PENDING',
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
 }
 
 export const requestCategoryRecord: Record<RequestCategory, string> = {

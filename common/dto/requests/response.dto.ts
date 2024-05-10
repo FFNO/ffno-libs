@@ -12,7 +12,7 @@ export interface IRequestResDto {
   id: string;
   name: string;
   details: string;
-  status: number;
+  status: RequestStatus;
   category: RequestCategory;
   unit: IUnitResDto;
   sender: IMemberResDto;

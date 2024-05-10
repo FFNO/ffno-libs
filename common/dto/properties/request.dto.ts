@@ -20,7 +20,7 @@ export interface ICreateSimpleUnitDto {
 export interface ICreatePropertyDto {
   id: string;
   name: string;
-  type: number;
+  type: PropertyType;
   address: string;
   ward: string;
   district: string;

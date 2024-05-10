@@ -1,20 +1,20 @@
 import { getOptionListFromRecord } from '../../helpers';
 
 export enum MemberRole {
-  ADMIN,
-  LANDLORD,
-  TENANT,
-  SERVICE_WORKER,
+  ADMIN = 'ADMIN',
+  LANDLORD = 'LANDLORD',
+  TENANT = 'TENANT',
+  SERVICE_WORKER = 'SERVICE_WORKER',
 }
 
 export enum ContactType {
-  TENANT,
-  SERVICE_WORKER,
+  TENANT = 'TENANT',
+  SERVICE_WORKER = 'SERVICE_WORKER',
 }
 
 export enum Gender {
-  MALE = 'male',
-  FEMALE = 'female',
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
 }
 
 export const memberRoleRecord: Record<MemberRole, string> = {

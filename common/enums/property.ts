@@ -1,8 +1,8 @@
 import { getOptionListFromRecord } from '../../helpers';
 
 export enum PropertyType {
-  SINGLE_UNIT,
-  MULTIPLE_UNIT,
+  SINGLE_UNIT = 'SINGLE_UNIT',
+  MULTIPLE_UNIT = 'MULTIPLE_UNIT',
 }
 
 export const propertyTypeRecord: Record<PropertyType, string> = {

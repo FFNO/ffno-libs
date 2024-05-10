@@ -1,14 +1,14 @@
 import { getOptionListFromRecord } from '../../helpers';
 
 export enum InvoiceStatus {
-  PENDING,
-  PAID,
-  PARTIAL,
-  OVERDUE,
+  PENDING = 'PENDING',
+  PAID = 'PAID',
+  PARTIAL = 'PARTIAL',
+  OVERDUE = 'OVERDUE',
 }
 
 export enum InvoiceCategory {
-  UNIT_CHARGE,
+  UNIT_CHARGE = 'UNIT_CHARGE',
 }
 
 export const invoiceCategoryRecord: Record<InvoiceCategory, string> = {
