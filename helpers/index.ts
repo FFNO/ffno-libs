@@ -8,7 +8,7 @@ export function getOptionListFromRecord(record: Record<number, string>): {
   label: string;
 }[] {
   return Object.entries(record).map(([value, label]) => ({
-    value: +value,
+    value,
     label,
   }));
 }

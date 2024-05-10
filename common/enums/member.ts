@@ -13,8 +13,8 @@ export enum ContactType {
 }
 
 export enum Gender {
-  MALE,
-  FEMALE,
+  MALE = 'male',
+  FEMALE = 'female',
 }
 
 export const memberRoleRecord: Record<MemberRole, string> = {
