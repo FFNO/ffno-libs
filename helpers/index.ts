@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { Nullable, NullableObject } from '../common';
+
 export function calculatePage(total?: number) {
   return Math.ceil((total ?? 10) / 10);
 }
@@ -28,4 +31,8 @@ export function replaceNullsWithUndefined<T>(
   }
   // @ts-ignore
   return obj;
+}
+
+export function handleSearchQuery(keyword: string | null | undefined) {
+  return !!keyword ? keyword.split(' ').join(' | ') : undefined;
 }
