@@ -8,10 +8,10 @@ export interface IGetListUnitDto extends IGetListDto {
   province?: string;
   amenities?: string[];
   features?: string[];
-  minArea?: number;
-  maxArea?: number;
-  minPrice?: number;
-  maxPrice?: number;
+  minArea?: any;
+  maxArea?: any;
+  minPrice?: any;
+  maxPrice?: any;
 }
 
 export interface IGetSimpleListUnitDto {

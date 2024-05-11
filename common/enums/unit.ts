@@ -12,4 +12,10 @@ export const unitStatusRecord: Record<UnitStatus, string> = {
   [UnitStatus.BAD]: 'Bad',
 };
 
+export const unitStatusColorRecord = {
+  [UnitStatus.GOOD]: 'green',
+  [UnitStatus.MAINTAINING]: 'orange',
+  [UnitStatus.BAD]: 'red',
+};
+
 export const unitStatuses = getOptionListFromRecord(unitStatusRecord);

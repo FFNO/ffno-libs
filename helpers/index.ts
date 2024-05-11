@@ -12,3 +12,20 @@ export function getOptionListFromRecord(record: Record<number, string>): {
     label,
   }));
 }
+
+export function replaceNullsWithUndefined<T>(
+  obj: Nullable<NullableObject<T>>,
+): T {
+  if (obj === null) {
+    // @ts-ignore
+    return undefined;
+  } else if (typeof obj === 'object') {
+    for (const key in obj) {
+      if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        obj[key] = replaceNullsWithUndefined(obj[key]);
+      }
+    }
+  }
+  // @ts-ignore
+  return obj;
+}

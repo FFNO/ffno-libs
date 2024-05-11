@@ -20,4 +20,10 @@ export const requestStatusRecord: Record<RequestStatus, string> = {
   [RequestStatus.REJECTED]: 'Rejected',
 };
 
+export const requestStatusColorRecord = {
+  [RequestStatus.ACCEPTED]: 'green',
+  [RequestStatus.PENDING]: 'orange',
+  [RequestStatus.REJECTED]: 'red',
+};
+
 export const requestCategories = getOptionListFromRecord(requestCategoryRecord);
