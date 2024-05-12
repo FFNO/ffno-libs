@@ -9,6 +9,7 @@ export type DeepNullable<T> = {
 export interface IGetListDto {
   pageSize?: number;
   page?: number;
+  reload?: boolean;
 }
 
 export interface IGetListResDto<T = unknown> {
