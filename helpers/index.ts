@@ -5,6 +5,11 @@ export function calculatePage(total?: number) {
   return Math.ceil((total ?? 10) / 10);
 }
 
+export const vndFormatter = Intl.NumberFormat('vi-VN', {
+  currency: 'VND',
+  style: 'currency',
+});
+
 export function getOptionListFromRecord(record: Record<number, string>): {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   value: any;
