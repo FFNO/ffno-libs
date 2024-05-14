@@ -22,6 +22,13 @@ export const invoiceStatusRecord: Record<InvoiceStatus, string> = {
   [InvoiceStatus.OVERDUE]: 'Overdue',
 };
 
+export const invoiceStatusColorRecord: Record<InvoiceStatus, string> = {
+  [InvoiceStatus.PENDING]: 'gray',
+  [InvoiceStatus.PAID]: 'green',
+  [InvoiceStatus.PARTIAL]: 'orange',
+  [InvoiceStatus.OVERDUE]: 'red',
+};
+
 export const invoiceCategories = getOptionListFromRecord(invoiceCategoryRecord);
 
 export const invoiceStatuses = getOptionListFromRecord(invoiceStatusRecord);

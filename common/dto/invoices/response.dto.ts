@@ -1,4 +1,4 @@
-import { InvoiceStatus } from '../../enums';
+import { InvoiceCategory, InvoiceStatus } from '../../enums';
 import { Nullable } from '../../types';
 import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
@@ -18,7 +18,7 @@ export interface IInvoiceResDto {
   paidAt: Nullable<Date>;
   dueDate: Date;
   details: string;
-  category: string;
+  category: InvoiceCategory;
   unitId: string;
   unit: IUnitResDto;
   memberId: string;
