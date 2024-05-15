@@ -5,14 +5,19 @@ export enum InvoiceStatus {
   PAID = 'PAID',
   PARTIAL = 'PARTIAL',
   OVERDUE = 'OVERDUE',
+  MERGED = 'MERGED',
 }
 
 export enum InvoiceCategory {
+  MERGED = 'MERGED',
   UNIT_CHARGE = 'UNIT_CHARGE',
+  UNIT_LOG_PRICE = 'UNIT_LOG_PRICE',
 }
 
 export const invoiceCategoryRecord: Record<InvoiceCategory, string> = {
+  [InvoiceCategory.MERGED]: 'Merge',
   [InvoiceCategory.UNIT_CHARGE]: 'Unit charge',
+  [InvoiceCategory.UNIT_LOG_PRICE]: 'Unit log price',
 };
 
 export const invoiceStatusRecord: Record<InvoiceStatus, string> = {
@@ -20,6 +25,7 @@ export const invoiceStatusRecord: Record<InvoiceStatus, string> = {
   [InvoiceStatus.PAID]: 'Paid',
   [InvoiceStatus.PARTIAL]: 'Partial',
   [InvoiceStatus.OVERDUE]: 'Overdue',
+  [InvoiceStatus.MERGED]: 'Merged',
 };
 
 export const invoiceStatusColorRecord: Record<InvoiceStatus, string> = {
@@ -27,6 +33,7 @@ export const invoiceStatusColorRecord: Record<InvoiceStatus, string> = {
   [InvoiceStatus.PAID]: 'green',
   [InvoiceStatus.PARTIAL]: 'orange',
   [InvoiceStatus.OVERDUE]: 'red',
+  [InvoiceStatus.MERGED]: 'grape',
 };
 
 export const invoiceCategories = getOptionListFromRecord(invoiceCategoryRecord);
