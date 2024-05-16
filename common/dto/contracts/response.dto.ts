@@ -3,7 +3,7 @@ import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
 
 export interface IContractResDto {
-  id: string;
+  id: number;
   status: ContractStatus;
   template: string;
   startDate: Date;

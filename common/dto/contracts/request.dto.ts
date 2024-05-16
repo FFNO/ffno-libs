@@ -14,7 +14,7 @@ export interface ICreateContractDto {
   endDate: Date;
   terminationDate?: Date;
   imgUrls: string[];
-  landlordId: string;
+  landlordId?: string;
   tenantId: string;
   unitId: string;
 }
