@@ -12,7 +12,7 @@ export interface IPropertyResDto {
   district: string;
   province: string;
   imgUrls: string[];
-  details: Nullable<string>;
+  description: Nullable<string>;
   ownerId: Nullable<string>;
   owner: IMemberResDto;
   amenities: string[];

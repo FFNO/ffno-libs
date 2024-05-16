@@ -11,7 +11,7 @@ export interface IMemberWithStatus {
 export interface IRequestResDto {
   id: string;
   name: string;
-  details: string;
+  description: string;
   status: RequestStatus;
   category: RequestCategory;
   unit: IUnitResDto;

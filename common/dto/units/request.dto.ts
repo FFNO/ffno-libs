@@ -26,7 +26,7 @@ export interface ICreateUnitDto {
   deposit: any;
   status: UnitStatus;
   imgUrls: string[];
-  details: string;
+  description: string;
   unitFeatures: string[];
   propertyId: string;
 }

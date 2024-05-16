@@ -17,7 +17,7 @@ export interface IInvoiceResDto {
   total: any;
   paidAt: Nullable<Date>;
   dueDate: Date;
-  details: string;
+  description: string;
   category: InvoiceCategory;
   unitId: string;
   unit: IUnitResDto;

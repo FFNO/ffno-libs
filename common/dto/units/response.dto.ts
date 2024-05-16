@@ -16,7 +16,7 @@ export interface IUnitResDto {
 
   deposit: any;
 
-  details: Nullable<string>;
+  description: Nullable<string>;
 
   status: UnitStatus;
 

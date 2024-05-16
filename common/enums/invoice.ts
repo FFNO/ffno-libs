@@ -11,13 +11,13 @@ export enum InvoiceStatus {
 export enum InvoiceCategory {
   MERGED = 'MERGED',
   UNIT_CHARGE = 'UNIT_CHARGE',
-  UNIT_LOG_PRICE = 'UNIT_LOG_PRICE',
+  UNIT_PRICE_LOG = 'UNIT_PRICE_LOG',
 }
 
 export const invoiceCategoryRecord: Record<InvoiceCategory, string> = {
   [InvoiceCategory.MERGED]: 'Merge',
   [InvoiceCategory.UNIT_CHARGE]: 'Unit charge',
-  [InvoiceCategory.UNIT_LOG_PRICE]: 'Unit log price',
+  [InvoiceCategory.UNIT_PRICE_LOG]: 'Unit log price',
 };
 
 export const invoiceStatusRecord: Record<InvoiceStatus, string> = {

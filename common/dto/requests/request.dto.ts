@@ -8,7 +8,7 @@ export interface IGetListRequestDto extends IGetListDto {
 export interface ICreateRequestDto {
   id: string;
   name: string;
-  details: string;
+  description: string;
   category: RequestCategory;
   receiverIds: string[];
   propertyId: string;
