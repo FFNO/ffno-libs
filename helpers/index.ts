@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import { Nullable, NullableObject } from '../common';
+import dayjs from 'dayjs';
+import { DATE_FORMAT, Nullable, NullableObject } from '../common';
 
 export function calculatePage(total?: number) {
   return Math.ceil((total ?? 10) / 10);
@@ -40,4 +41,8 @@ export function replaceNullsWithUndefined<T>(
 
 export function handleSearchQuery(keyword: string | null | undefined) {
   return !!keyword ? keyword.split(' ').join(' | ') : undefined;
+}
+
+export function formatDate(date: Date | string) {
+  return dayjs(date).format(DATE_FORMAT);
 }
