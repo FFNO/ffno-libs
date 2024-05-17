@@ -1,4 +1,4 @@
-import { ContractStatus } from '../../enums';
+import { ContractStatus, RequestStatus } from '../../enums';
 import { IGetListDto } from '../../types';
 
 export interface IGetListContractDto extends IGetListDto {
@@ -17,4 +17,12 @@ export interface ICreateContractDto {
   landlordId?: string;
   tenantId: string;
   unitId: string;
+}
+
+export interface IUpdateContractDto {
+  imgUrls?: string[];
+  status?: RequestStatus;
+  startDate?: Date;
+  endDate?: Date;
+  terminationDate?: Date;
 }

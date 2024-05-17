@@ -1,4 +1,4 @@
-import { getOptionListFromRecord } from '@/libs/helpers';
+import { getOptionListFromRecord } from '../../helpers';
 
 export enum ContractStatus {
   ACTIVE = 'ACTIVE',
