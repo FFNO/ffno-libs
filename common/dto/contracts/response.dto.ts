@@ -1,4 +1,4 @@
-import { ContractStatus } from '../../enums';
+import { ContractStatus, RequestStatus } from '../../enums';
 import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
 
@@ -12,8 +12,10 @@ export interface IContractResDto {
   imgUrls: string[];
   landlordId: string;
   landlord: IMemberResDto;
+  landlordStatus: RequestStatus;
   tenantId: string;
   tenant: IMemberResDto;
+  tenantStatus: RequestStatus;
   unitId: string;
   unit: IUnitResDto;
 }
