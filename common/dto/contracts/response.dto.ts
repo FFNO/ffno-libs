@@ -1,5 +1,6 @@
 import { ContractStatus, RequestStatus } from '../../enums';
 import { IMemberResDto } from '../members';
+import { IRequestResDto } from '../requests';
 import { IUnitResDto } from '../units';
 
 export interface IContractResDto {
@@ -20,4 +21,5 @@ export interface IContractResDto {
   tenantStatus: RequestStatus;
   unitId: string;
   unit: IUnitResDto;
+  requests: IRequestResDto[];
 }

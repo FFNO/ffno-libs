@@ -11,7 +11,7 @@ export interface ICreateRequestDto {
   description: string;
   category: RequestCategory;
   receiverIds: string[];
-  propertyId: string;
+  propertyId?: string;
   unitId?: string;
   contractId?: number;
 }
