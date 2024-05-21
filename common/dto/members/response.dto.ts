@@ -1,4 +1,4 @@
-import { MemberRole } from '../../enums';
+import { Gender, MemberRole } from '../../enums';
 import { IContractResDto } from '../contracts';
 
 export interface IMemberResDto {
@@ -6,7 +6,7 @@ export interface IMemberResDto {
   name: string;
   email: string;
   phone: string;
-  gender: string;
+  gender: Gender;
   address: string;
   dateOfBirth: Date;
   imgUrl: string;
