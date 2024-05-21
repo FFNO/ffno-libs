@@ -8,6 +8,8 @@ export interface IContractResDto {
   template: string;
   startDate: Date;
   endDate: Date;
+  price: any;
+  deposit: any;
   terminationDate: Date;
   imgUrls: string[];
   landlordId: string;
