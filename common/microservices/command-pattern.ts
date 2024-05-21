@@ -8,6 +8,7 @@ export const NOTIFICATION_PATTERNS = {
 };
 
 export const CHAT_PATTERNS = {
+  PING: 'chat.ping',
   GET_MESSAGE: 'chat.get-message',
   GET_LIST_MESSAGES: 'chat.get-list-message',
   GET_LIST_CHANNEL: 'chat.get-list-channel',
