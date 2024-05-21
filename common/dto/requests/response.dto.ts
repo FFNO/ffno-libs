@@ -1,4 +1,5 @@
 import { RequestCategory, RequestStatus } from '../../enums';
+import { IContractResDto } from '../contracts';
 import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
 
@@ -15,6 +16,7 @@ export interface IRequestResDto {
   status: RequestStatus;
   category: RequestCategory;
   unit: IUnitResDto;
+  contract: IContractResDto;
   sender: IMemberResDto;
   senderId: string;
   receivers: IMemberWithStatus[];

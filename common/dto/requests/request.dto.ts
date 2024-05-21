@@ -12,7 +12,8 @@ export interface ICreateRequestDto {
   category: RequestCategory;
   receiverIds: string[];
   propertyId: string;
-  unitId: string;
+  unitId?: string;
+  contractId?: number;
 }
 
 export interface IUpdateRequestDto {
