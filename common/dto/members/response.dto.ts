@@ -1,4 +1,5 @@
 import { MemberRole } from '../../enums';
+import { IContractResDto } from '../contracts';
 
 export interface IMemberResDto {
   id: string;
@@ -11,6 +12,7 @@ export interface IMemberResDto {
   imgUrl: string;
   role: MemberRole;
   unit: string;
+  tenantContracts: IContractResDto[];
 }
 
 export interface ICurrentMemberResDto {
