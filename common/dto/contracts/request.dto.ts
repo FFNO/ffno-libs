@@ -17,6 +17,7 @@ export interface ICreateContractDto {
   landlordId?: string;
   tenantId: string;
   unitId: string;
+  propertyId?: string;
 }
 
 export interface IUpdateContractDto {
