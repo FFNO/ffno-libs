@@ -16,3 +16,8 @@ export interface IReviewResDto {
   author: IMemberResDto;
   createdAt: Date;
 }
+
+export interface IReviewRatingResDto {
+  rating: number;
+  ratingMap: Record<number, number>;
+}

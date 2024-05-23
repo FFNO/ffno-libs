@@ -46,3 +46,30 @@ export function handleSearchQuery(keyword: string | null | undefined) {
 export function formatDate(date: Date | string) {
   return dayjs(date).format(DATE_FORMAT);
 }
+
+export function calculateRating(
+  reviews: {
+    rating: number;
+  }[],
+) {
+  const ratingMap: Record<number, number> = {
+    1: 0,
+    2: 0,
+    3: 0,
+    4: 0,
+    5: 0,
+  };
+
+  let rating = 0;
+
+  reviews.forEach((review) => {
+    ratingMap[review.rating]++;
+  });
+
+  Object.keys(ratingMap).forEach((key) => {
+    ratingMap[key] = ratingMap[key] / reviews.length;
+    rating += Number(key) * ratingMap[key];
+  });
+
+  return { rating, ratingMap };
+}
