@@ -6,4 +6,5 @@ export * from './members';
 export * from './notification';
 export * from './properties';
 export * from './requests';
+export * from './reviews';
 export * from './units';

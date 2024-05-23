@@ -5,6 +5,10 @@ export enum UnitStatus {
   MAINTAINING = 'MAINTAINING',
   BAD = 'BAD',
 }
+export enum UnitPriceCategory {
+  WATER = 'WATER',
+  ELECTRICITY = 'ELECTRICITY',
+}
 
 export const unitStatusRecord: Record<UnitStatus, string> = {
   [UnitStatus.GOOD]: 'Good',
