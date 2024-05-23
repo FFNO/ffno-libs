@@ -69,7 +69,8 @@ export function calculateRating(
   Object.keys(ratingMap).forEach((key) => {
     ratingMap[key] = ratingMap[key] / reviews.length;
     rating += Number(key) * ratingMap[key];
+    ratingMap[key] = Number(ratingMap[key] * 100).toFixed(2);
   });
 
-  return { rating, ratingMap };
+  return { rating: rating.toFixed(2), ratingMap };
 }
