@@ -1,7 +1,7 @@
 import { PropertyType } from '../../enums';
 import { Nullable } from '../../types';
 import { IMemberResDto } from '../members';
-import { IReviewResDto } from '../reviews';
+import { IReviewRatingResDto, IReviewResDto } from '../reviews';
 import { IUnitResDto } from '../units';
 
 export interface IPropertyResDto {
@@ -18,6 +18,7 @@ export interface IPropertyResDto {
   owner: IMemberResDto;
   amenities: string[];
   units: IUnitResDto[];
+  rating: IReviewRatingResDto;
   reviews: IReviewResDto[];
   occupiedCount: number;
   vacantCount: number;
