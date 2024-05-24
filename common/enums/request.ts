@@ -29,3 +29,5 @@ export const requestStatusColorRecord = {
 };
 
 export const requestCategories = getOptionListFromRecord(requestCategoryRecord);
+
+export const requestStatuses = getOptionListFromRecord(requestStatusRecord);
