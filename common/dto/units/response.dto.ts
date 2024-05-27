@@ -2,6 +2,7 @@ import { UnitStatus } from '../../enums';
 import { Nullable } from '../../types';
 import { IMemberResDto } from '../members';
 import { IPropertyResDto } from '../properties';
+import { IReviewRatingResDto, IReviewResDto } from '../reviews';
 
 export interface IUnitResDto {
   id: string;
@@ -33,4 +34,6 @@ export interface IUnitResDto {
   propertyId: string;
 
   requested: boolean;
+  rating: IReviewRatingResDto;
+  reviews: IReviewResDto[];
 }

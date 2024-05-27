@@ -3,6 +3,8 @@ import { IGetListDto } from '../../types';
 
 export interface IGetListRequestDto extends IGetListDto {
   type?: string;
+  status?: RequestStatus;
+  category?: RequestCategory;
 }
 
 export interface ICreateRequestDto {
