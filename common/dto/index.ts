@@ -1,6 +1,7 @@
 export * from './auth';
 export * from './chat';
 export * from './contracts';
+export * from './equipment';
 export * from './invoices';
 export * from './members';
 export * from './notification';
