@@ -2,7 +2,7 @@ import { UnitStatus } from '../../enums';
 import { IPropertyResDto } from '../properties';
 import { IUnitResDto } from '../units';
 
-export class IEquipmentResDto {
+export interface IEquipmentResDto {
   id: string;
   name: string;
   brand: string;
