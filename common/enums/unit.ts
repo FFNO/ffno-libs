@@ -13,7 +13,7 @@ export enum UnitPriceCategory {
 export const unitStatusRecord: Record<UnitStatus, string> = {
   [UnitStatus.GOOD]: 'Good',
   [UnitStatus.MAINTAINING]: 'Maintaining',
-  [UnitStatus.BAD]: 'Bad',
+  [UnitStatus.BAD]: 'Have issue',
 };
 
 export const unitStatusColorRecord = {

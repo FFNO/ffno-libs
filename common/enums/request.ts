@@ -3,6 +3,8 @@ import { getOptionListFromRecord } from '../../helpers';
 export enum RequestCategory {
   UNIT_LEASE = 'UNIT_LEASE',
   TERMINATE_CONTRACT = 'TERMINATE_CONTRACT',
+  REPORT_ISSUE = 'REPORT_ISSUE',
+  EQUIPMENT_WARRANTY = 'EQUIPMENT_WARRANTY',
 }
 
 export enum RequestStatus {
@@ -14,6 +16,8 @@ export enum RequestStatus {
 export const requestCategoryRecord: Record<RequestCategory, string> = {
   [RequestCategory.UNIT_LEASE]: 'Unit Lease',
   [RequestCategory.TERMINATE_CONTRACT]: 'Terminate contract',
+  [RequestCategory.REPORT_ISSUE]: 'Report issue',
+  [RequestCategory.EQUIPMENT_WARRANTY]: 'Equipment warranty',
 };
 
 export const requestStatusRecord: Record<RequestStatus, string> = {

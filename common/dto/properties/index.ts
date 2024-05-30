@@ -1,2 +1,2 @@
-export * from './request.dto';
-export * from './response.dto';
+export * from './property-request.dto';
+export * from './property-response.dto';

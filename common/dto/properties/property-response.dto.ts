@@ -1,5 +1,6 @@
 import { PropertyType } from '../../enums';
 import { Nullable } from '../../types';
+import { IEquipmentResDto } from '../equipment';
 import { IMemberResDto } from '../members';
 import { IReviewRatingResDto, IReviewResDto } from '../reviews';
 import { IUnitResDto } from '../units';
@@ -20,6 +21,7 @@ export interface IPropertyResDto {
   units: IUnitResDto[];
   rating: IReviewRatingResDto;
   reviews: IReviewResDto[];
+  equipments: IEquipmentResDto[];
   occupiedCount: number;
   vacantCount: number;
 }
