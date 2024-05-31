@@ -16,4 +16,5 @@ export interface IEquipmentResDto {
   warrantyExpirationDate: Date;
   property: IPropertyResDto;
   unit: IUnitResDto;
+  imgUrls: string[];
 }
