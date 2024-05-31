@@ -17,4 +17,5 @@ export interface IEquipmentResDto {
   property: IPropertyResDto;
   unit: IUnitResDto;
   imgUrls: string[];
+  category: string;
 }
