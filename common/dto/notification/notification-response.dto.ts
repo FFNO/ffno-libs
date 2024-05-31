@@ -5,4 +5,6 @@ export interface INotificationResDto {
   isRead: boolean;
   receiverId: string;
   createdAt: Date;
+  requestId?: string;
+  contractId?: string;
 }
