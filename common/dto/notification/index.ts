@@ -1,1 +1,2 @@
-export * from './request.dto';
+export * from './notification-request.dto';
+export * from './notification-response.dto';
