@@ -74,3 +74,8 @@ export function calculateRating(
 
   return { rating: rating.toFixed(2), ratingMap };
 }
+
+export const displayText = (text?: Nullable<string>) => (text ? text : '-');
+
+export const displayDate = (date?: Nullable<Date | string>) =>
+  date ? dayjs(date).format(DATE_FORMAT) : '-';
