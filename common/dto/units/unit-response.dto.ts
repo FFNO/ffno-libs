@@ -21,6 +21,7 @@ export interface IUnitResDto {
   property: IPropertyResDto;
   propertyId: string;
   requested: boolean;
+  isLiving: boolean;
   selfOccupied: boolean;
   rating: IReviewRatingResDto;
   reviews: IReviewResDto[];
