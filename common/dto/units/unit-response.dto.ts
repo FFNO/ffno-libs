@@ -9,6 +9,8 @@ export interface IUnitResDto {
   id: string;
   name: string;
   isListing: boolean;
+  maxSlot: number;
+  curSlot: number;
   area: any;
   price: any;
   deposit: any;

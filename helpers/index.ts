@@ -69,10 +69,15 @@ export function calculateRating(
   Object.keys(ratingMap).forEach((key) => {
     ratingMap[key] = ratingMap[key] / reviews.length;
     rating += Number(key) * ratingMap[key];
-    ratingMap[key] = Number(ratingMap[key] * 100).toFixed(2);
+    ratingMap[key] = isNaN(ratingMap[key])
+      ? 0
+      : Number(ratingMap[key] * 100).toFixed(2);
   });
 
-  return { rating: rating.toFixed(2), ratingMap };
+  return {
+    rating: rating.toFixed(2),
+    ratingMap,
+  };
 }
 
 export const displayText = (text?: Nullable<string>) => (text ? text : '-');

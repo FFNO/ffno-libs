@@ -2,6 +2,7 @@ import { UnitStatus } from '../../enums';
 import { IGetListDto } from '../../types';
 
 export interface IGetListUnitDto extends IGetListDto {
+  maxSlot?: number;
   name?: string;
   ward?: string;
   district?: string;
@@ -24,6 +25,7 @@ export interface ICreateUnitDto {
   area: any;
   price: any;
   deposit: any;
+  maxSlot: number;
   status: UnitStatus;
   imgUrls: string[];
   description: string;
