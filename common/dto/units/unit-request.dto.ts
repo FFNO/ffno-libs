@@ -36,7 +36,7 @@ export interface ICreateUnitDto {
 export interface IUpdateUnitDto extends Partial<ICreateUnitDto> {}
 
 export interface IOpenUnitDto {
-  startListingAt: string;
-  endListingAt: string;
+  startListingAt?: Date;
+  endListingAt?: Date;
   unitIds: string[];
 }
