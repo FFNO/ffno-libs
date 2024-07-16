@@ -1,6 +1,11 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import dayjs from 'dayjs';
-import { DATE_FORMAT, Nullable, NullableObject } from '../common';
+import {
+  DATE_FORMAT,
+  DATETIME_FORMAT,
+  Nullable,
+  NullableObject,
+} from '../common';
 
 export function calculatePage(total?: number) {
   return Math.ceil((total ?? 10) / 10);
@@ -45,6 +50,10 @@ export function handleSearchQuery(keyword: string | null | undefined) {
 
 export function formatDate(date: Date | string) {
   return dayjs(date).format(DATE_FORMAT);
+}
+
+export function formatDatetime(date: Date | string) {
+  return dayjs(date).format(DATETIME_FORMAT);
 }
 
 export function calculateRating(
