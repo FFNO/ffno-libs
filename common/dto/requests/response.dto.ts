@@ -1,5 +1,6 @@
 import { RequestCategory, RequestStatus } from '../../enums';
 import { IContractResDto } from '../contracts';
+import { IEquipmentResDto } from '../equipment';
 import { IMemberResDto } from '../members';
 import { IUnitResDto } from '../units';
 
@@ -23,4 +24,5 @@ export interface IRequestResDto {
   approvers: IMemberResDto[];
   approverIds: string[];
   createdAt: Date;
+  equipment: IEquipmentResDto;
 }
